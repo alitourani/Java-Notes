@@ -13,12 +13,16 @@ public class Main {
     String str2 = "This String is Much More Common!";
     String str3 = str1 + " " + str2 + " " + dnum;
     System.out.println(str3);
+    ch = str1.charAt(2); // Value: 'm'
+    int pos = str1.indexOf("ring"); // Value: 8
+    String part = str1.substring(7, 9); // Value: "Str"
     
     boolean b1 = false;
     boolean toBe = b1 || !b1;
     if (toBe || (number == 4)) {
         System.out.println(toBe);
     }
+    boolean has = str1.contains("Str");
     
     // Compact conditions
     int check = number == 4 ? 0 : 1;
@@ -58,5 +62,12 @@ public class Main {
     for (int elem : arr2) {
         System.out.print(elem);
     }
+    System.out.println();
+    
+    // Functions of a Class
+    Student std = new Student();
+    String name = std.getName();
+    std.setName("Alex");
+    name = std.getName();
   }
 }
