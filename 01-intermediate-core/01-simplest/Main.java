@@ -3,7 +3,7 @@ public class Main {
     // First log
     System.out.println("Let's check some JAVA codes!");
     
-    // Variables
+    // Variables (primitives)
     int number = 5;
     double dnum = 4.55978;
     float fnum = (float) dnum;

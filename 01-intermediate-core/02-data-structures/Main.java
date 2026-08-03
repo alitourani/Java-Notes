@@ -4,6 +4,7 @@ import java.util.Deque;
 import java.util.Queue;
 import java.util.Arrays;
 import java.util.TreeSet;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.ArrayDeque;
@@ -32,6 +33,7 @@ public class Main {
     
     // Collections:
     // - List (and ArrayList)
+    ArrayList menu = new ArrayList<>();
     // - Queue (and PriorityQueue)
     // - Set (and HashSet)
     // Cover: add(), clear(), remove(), size(), isEmpty(), contains()
@@ -51,6 +53,14 @@ public class Main {
     // Synchronizing
     List<String> syncedShoppingList = Collections.synchronizedList(shoppingList);
     System.out.println("Shopping List Synced: " + shoppingList);
+    
+    // Array of Classes
+    ArrayList<Student> people = new ArrayList<>();
+    Student std1 = new Student(1, "Alex");
+    Student std2 = new Student(2, "Mary");
+    people.add(std1);
+    people.add(std2);
+    System.out.println("People List: " + people);
     
     // Stacks and Deques
     Deque<String> stack = new ArrayDeque<>();
