@@ -40,7 +40,7 @@ class BirthdayCake extends Cake {
     
     public BirthdayCake(){
         // The default flavor of a birthday cake is chocolate.
-        this.setFlavor("chocolate");
+        super("chocolate");
     }
 
     public double getCandles() {
@@ -58,7 +58,7 @@ class WeddingCake extends Cake {
 
     public WeddingCake(){
         // The default flavor of a birthday cake is almond.
-        this.setFlavor("almond");
+        super("almond");
     }
 
     public double getTiers() {
