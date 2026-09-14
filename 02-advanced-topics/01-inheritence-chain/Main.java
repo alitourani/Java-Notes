@@ -24,5 +24,22 @@ public class Main {
         "' with ID '" + student.getId() + "' and StdId '" +
         student.getStdId() + "' created!");
     System.out.println("Description Override: " + student.getDescription());
+
+    System.out.println();
+
+    // Second-level
+    StudentAlumni studentAlm = new StudentAlumni();
+    studentAlm.setId(3);
+    studentAlm.setStdId(1993);
+    studentAlm.setName("Allen");
+    studentAlm.setStdAlumniId(999);
+    studentAlm.setDescription("OldStdDesc");
+    System.out.println(
+      String.format("New alumni student '%s' with ID '%d', StdId '%d', and AlumniId '%d' created!",
+      studentAlm.getName(), studentAlm.getId(),
+      studentAlm.getStdId(), studentAlm.getStdId()
+      )
+    );
+    System.out.println("Description Override: " + studentAlm.getDescription());
   }
 }
