@@ -5,6 +5,7 @@ public class Person {
     Person() {
         this.id = -1;
         this.name = "N/A";
+        System.out.println("- Constructor Person");
     }
     
     Person(int id, String name) {
