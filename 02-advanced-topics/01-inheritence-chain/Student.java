@@ -23,8 +23,13 @@ public class Student extends Person {
         this.description = "Student " + desc;
     }
 
-    // Will not be inherited (protected)
+    // Will not be inherited (private)
     private void hasClasses(boolean flag) {
         this.hasClass = flag;
+    }
+
+    // Will not be overridden (it is a final function)
+    final void template() {
+        System.out.println("Final Class ");
     }
 }
